@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu TeAmo </title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estilo2.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Molle&family=Pinyon+Script&family=Press+Start+2P&display=swap');
+        
+            @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Molle&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap');
+    </style>
+</head>
+<body>
+    
+
+    <div class="img">
+
+        <img src="imagens/eueela.png" alt="foto nossa">
+
+        <p class="text1">
+            
+            Agradeço a Deus todos os dias por ter você ao meu lado. <br> Obrigado por tudo o que fez e continua fazendo na minha vida. <br>
+            Feliz 1 ano, meu amor! Que essa data se repita por muitos e muitos anos. <br>
+            Você é o melhor presente que a vida me deu, e cada momento ao seu lado <br> é uma bênção. <br>
+            Eu te amo infinitamente, hoje e para sempre. 💖
+        </p>
+
+        <audio class="music" src="sons/Jorge & Mateus - Enquanto Houver Razões - [DVD Ao Vivo em Jurerê] - (Clipe Oficial).mp3" controls autoplay></audio>
+
+    </div>
+
+    <div class="hearts-container"></div>
+
+    <script>
+
+
+    function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart-falling");
+        heart.innerText = "❤";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+        heart.style.fontSize = (Math.random() * 10 + 15) + "px";
+        document.querySelector(".hearts-container").appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 5000);
+    }
+
+    setInterval(createHeart, 200);
+</script>
+   
+    
+</body>
+</html>
