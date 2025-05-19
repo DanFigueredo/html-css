@@ -7,11 +7,20 @@
 </head>
 <style>
     body{
-        height: 100vh;
+        /*height: 100vh;
         background-color: black;
         background-image: url(imagens/wallpaper002.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: scroll; */
+
+        /* ShortHand 
+        color  > image > position > repeat > [size] > attachment
+        size não funciona, use separadamente
+        */
+
+       background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed;
+       background-size: cover;
 
 
     }
@@ -25,13 +34,14 @@
         font-family: Arial, Helvetica, sans-serif;
         color: white;
         text-shadow: 1px 1px rgba(0, 0, 0, 0.164);
+        justify-content: center;
 
     }
 </style>
 <body>
     <main>
         <h1>Teste Imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptas at, qui ad molestiae iste rem consequuntur illo! Debitis nam, natus perspiciatis tempora quis vel voluptas dignissimos. Suscipit, sed molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum architecto amet ea blanditiis. Rerum, labore natus! Cumque ad eaque assumenda suscipit sequi recusandae dignissimos asperiores? Deserunt soluta corporis aspernatur cumque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis enim sed sapiente architecto iusto, aperiam voluptates earum hic eaque, ab ipsa alias esse. Magni eaque, exercitationem dolor at esse quidem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptas at, qui ad molestiae iste rem consequuntur illo! Debitis nam, natus perspiciatis tempora quis vel voluptas dignissimos. Suscipit, sed molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum architecto amet ea blanditiis. Rerum, labore natus! Cumque ad eaque assumenda suscipit sequi recusandae dignissimos asperiores? Deserunt soluta corporis aspernatur cumque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis enim sed sapiente architecto iusto, aperiam voluptates earum hic eaque, ab ipsa alias esse. Magni eaque, exercitationem dolor at esse quidem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi recusandae explicabo deserunt cum facilis inventore possimus modi magni ipsa eos dolorem quaerat nesciunt alias ab dolores officiis aperiam, dolor ut? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum maiores, voluptas, magni dignissimos exercitationem sint vitae eum, quam ut animi tempora! Nostrum veniam sunt dolor ipsa aliquid omnis nulla fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellat excepturi odit vitae libero beatae sunt laudantium fugiat voluptatem, perferendis quae placeat deleniti. Quaerat sint omnis culpa neque reiciendis error?</p>
     </main>
     
 </body>
