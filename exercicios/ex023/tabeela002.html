@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+</head>
+<style>
+   body{
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+   h1{
+    text-align: center;
+   }
+
+    table{
+        width: 500px;
+        height: 120px;
+        border-collapse: collapse;
+        margin: auto;
+        
+    }
+
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    thead, tfoot{
+        background-color: gray;
+        color: white;
+    }
+    td, th{
+        border: 1px solid black;
+        
+    }
+
+    .num{
+        text-align: right;
+        
+    }
+
+    #aspas{
+        background-color: rgb(3, 202, 3);
+        color: black;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    #oxy{
+         background-color: aquamarine;
+        color: black;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    #dg{
+        background-color: red;
+        color: black;
+        font-weight: bolder;
+        text-align: center;
+
+    }
+
+    #jw{
+        background-color: yellow;
+        color: black;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+</style>
+<body>
+
+    <h1>Usando Tabelas Grandes:</h1>
+
+    <table>
+        <caption>Duelistas Das Americas</caption>
+        <thead>
+            <tr>
+                <th> Duelistas  </th>
+                <th> Wins </th>
+            </tr>
+
+            </th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td id="aspas">Aspas</td>
+                <td class="num">5</td>
+            </tr>
+
+            <tr>
+                <td id="oxy">Oxy</td>
+                <td class="num">4</td>
+            </tr>
+
+             <tr>
+                <td id="dg">Dgzin</td>
+                <td class="num">2</td>
+            </tr>
+
+             <tr>
+                <td id="jw">Jawgemo</td>
+                <td class="num">5</td>
+            </tr>
+
+          
+            </tr>
+
+
+
+        </tbody>
+
+      
+
+        <tfoot>
+        <tr>
+            <th>Todas as Wins</th>
+            <td class="num"><strong>16</strong></td>
+        </tr>
+
+        </tfoot>
+
+    </table>
+    
+</body>
+</html>
